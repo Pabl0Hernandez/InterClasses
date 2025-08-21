@@ -1,8 +1,59 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Página Inicial";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container py-5">
+
+	<div class="text-center mb-5">
+		<h1 class="display-4 fw-bold"><i class="bi bi-fire fs-1 text-info"></i> Bem Vindo ao Interclasse </h1>
+		<p class="lead text-muted">Os melhores sports Brasileiro</p>
+		<a asp-controller="Tarefas" asp-action="Index" class="btn btn-outline-success btn-lg mt-3">Ver minhas tarefas</a>
+	</div>
+
+	<div class="row text-center">
+
+		<div class="col-12 col-md-4 mb-4">
+
+			<div class="card shadow-sm h-100">
+
+				<div class="card-body">
+
+					<i class="bi bi-plus-circle display-4 text-primary mb-3"></i>
+					<h5 class="card-title">Basquete🏀</h5>
+					<p class="card-text text-muted">Basquete é a arte de se movimentar em equipe para transformar a bola em pontos, com agilidade, estratégia e precisão.</p>
+
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="col-12 col-md-4 mb-4">
+
+			<div class="card shadow-sm h-100">
+
+				<div class="card-body">
+
+					<i class="bi bi-check-circle display-4 text-success mb-3"></i>
+					<h5 class="card-title">Volei🏐</h5>
+					<p class="card-text text-muted">Vôlei é a dança de equipes que, com leveza e estratégia, buscam transformar a bola em pontos, alternando força e finesse no jogo aéreo.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-12 col-md-4 mb-4">
+
+			<div class="card shadow-sm h-100">
+
+				<div class="card-body">
+
+					<i class="bi bi-trash display-4 text-danger mb-3"></i>
+					<h5 class="card-title">Futebol⚽</h5>
+					<p class="card-text text-muted">Esporte coletivo jogado entre dois times de 11 jogadores, com o objetivo de marcar gols na baliza adversária.</p>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
 </div>
